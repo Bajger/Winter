@@ -18,7 +18,7 @@ BaselineOfWinter >> baseline: spec [
 			package: 'Winter-Pharo7-Support';
 			group: 'Development' with: 'Winter-Pharo7-Support' ].
 
-	spec for: #( #'pharo9.x' #'pharo10.x' #'pharo11.x' ) do: [
+	spec for: #( #'pharo9.x' #'pharo10.x' #'pharo11.x' #'pharo12.x') do: [
 		spec
 			package: 'Winter-Pharo9-Support';
 			group: 'Development' with: 'Winter-Pharo9-Support' ]
@@ -42,11 +42,10 @@ BaselineOfWinter >> setUpDependenciesFor: spec [
 		import: 'Buoy'.
 
 	spec
-		configuration: 'PharoSound'
+		baseline: 'Sound'
 		with: [ spec
-				versionString: #stable;
-				repository: 'http://smalltalkhub.com/mc/PharoExtras/Sound/main'
-			]
+			repository: 'github://pharo-contributions/Sound'
+		]
 ]
 
 { #category : #baseline }
