@@ -41,9 +41,7 @@ BaselineOfWinter >> setUpDependenciesFor: spec [
 
 	spec
 		baseline: 'Sound'
-		with: [ spec
-			repository: 'github://pharo-contributions/Sound'
-		]
+		with: [ spec repository: 'github://pharo-contributions/Sound' ]
 ]
 
 { #category : #baseline }
