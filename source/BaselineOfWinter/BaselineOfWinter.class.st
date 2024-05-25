@@ -62,7 +62,7 @@ BaselineOfWinter >> setUpGroupsFor: spec [
 BaselineOfWinter >> setUpPackagesFor: spec [
 
 	spec
-		package: 'Winter-AssetManagement' with: [ spec requires: #('PharoSound') ];
+		package: 'Winter-AssetManagement' with: [ spec requires: #('Sound') ];
 		package: 'Winter-AssetManagementTests' with: [ spec requires: #('Winter-AssetManagement') ];
 		package: 'Winter-Core';
 		package: 'Winter-CoreTests' with: [ spec requires: #('Winter-Core') ];
