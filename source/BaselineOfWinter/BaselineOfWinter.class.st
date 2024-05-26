@@ -35,7 +35,7 @@ BaselineOfWinter >> setUpDependenciesFor: spec [
 
 	spec
     		baseline: 'Buoy'
-    		with: [ spec repository: 'github://github://ba-st/Buoy:v6' ];
+    		with: [ spec repository: 'github://ba-st/Buoy:v6' ];
     		project: 'Buoy-Deployment'
     		copyFrom: 'Buoy' with: [ spec loads: 'Deployment' ].
 
